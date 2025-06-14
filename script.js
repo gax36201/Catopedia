@@ -172,5 +172,19 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#validation-box-signup #signup-button").addEventListener("click", checkValidity);
     document.querySelector("#validation-box-login #login-button").addEventListener("click", checkLogin);
     getCatFact();
+
+    document.getElementById("validation-box-signup").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            checkValidity();
+        }
+    });
+
+    document.getElementById("validation-box-login").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            checkLogin();
+        }
+    });
 });
 

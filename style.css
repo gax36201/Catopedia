@@ -102,7 +102,7 @@ body{
     font-weight: 500;
 }
 
-#error-box {
+#error-box,#error-box-login {
     display: flex;
     flex-direction: column;
     align-items: center;
