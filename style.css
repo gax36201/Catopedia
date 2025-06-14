@@ -1,0 +1,157 @@
+body{
+    background-color: bisque;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight:500;
+    font-size: 20;
+}
+
+#main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#validation-box-signup,#validation-box-login,#api-content{
+    width: 45%;
+    padding-bottom: 24px;
+    margin-top: 24px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 24px;
+}
+
+#login-button,#signup-button{
+    outline: none;
+    background-color: #89b3e6;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    width: 100px;
+    height: 40px;
+    font-weight:500;
+    cursor: pointer;
+}
+
+#title{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title-text{
+    font-weight: 600;
+    font-size: 38px;
+    margin-bottom: 12px;
+    color: #89b3e6;
+}
+
+#login-button:hover{
+    background-color: #82abdc;
+}
+
+#cat-fact-box{
+    font-size: 14px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+#email-box,#password-box,#confirmation-box,#username-box,#confirm-password-box,#username-box-login,#password-box-login,#confirmation-box-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eye-icon,#eye-icon-login{
+    opacity: 50%;
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#eye-icon:hover{
+    opacity: 65%;
+}
+
+#password-input-box,#password-input-box-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 32px;
+}
+
+.validation-input{
+    margin-top: 8px;
+    width: 380px;
+    height: 24px;
+    border: none;
+    border-radius: 14px;
+    outline: 2px dashed #89b3e6;
+    padding: 8px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 500;
+}
+
+#error-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    font-size: 16px;
+    margin-top: -12px;
+    margin-bottom: -12px;
+}
+
+#error-box span {
+    margin-top: 4px;
+}
+
+#validation-box-login {
+    display: none;
+}
+
+#api-content{
+    display: none;
+}
+
+#api-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+.api-button{
+    background-color: #89b3e6;
+    color: #ffffff;
+    height: 48px;
+    width: 160px;
+    font-size: 24px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    border: none;
+    border-radius: 14px;
+}
+
+#api-content{
+    height: 800px;
+}
+
+#api-item-list{
+    font-size: 17px;
+    padding-left: 12px;
+    padding-right: 16px;
+}
+
+.loading{
+    text-align: center;
+}

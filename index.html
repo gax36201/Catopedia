@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catopedia</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <div id="validation-box-signup">
+            <div id="title">
+                <span id="title-text">Catopedia</span>
+                <div id="cat-fact-box">
+                <span id="cat-fact"></span>
+            </div> 
+            </div>
+            <div id="username-box">
+                <span>Nazwa użytkownika</span>
+                <input class="validation-input" type="text" id="input-username">
+            </div>
+            <div id="email-box">
+                <span>E-mail</span>
+                <input class="validation-input" type="email" name="" id="input-email">
+            </div>
+            <div id="password-box">
+                <span>Hasło</span>
+                <div id="password-input-box">
+                    <input class="validation-input" type="password" name="" id="input-password">
+                    <img id="eye-icon" src=".\eye.png" alt="">
+                </div>  
+            </div>
+            <div id="confirm-password-box">
+                <span>Potwierdź hasło</span>
+                <input class="validation-input" type="password" id="input-confirm-password">
+            </div>
+            <div id="confirmation-box">
+                <button id="signup-button">Rejestracja</button>
+            </div>
+            <div id="error-box">
+                <span id="error-email"></span>
+                <span id="error-username"></span>
+                <span id="error-password"></span>
+                <span id="error-confirm-password"></span>
+            </div>
+        </div>
+
+        <div id="validation-box-login">
+            <div id="title">
+                <span id="title-text">Catopedia</span>
+                <div id="cat-fact-box">
+                <span id="cat-fact"></span>
+            </div> 
+            </div>
+            <div id="username-box-login">
+                <span>Nazwa użytkownika</span>
+                <input class="validation-input" type="text" id="input-username-login">
+            </div>
+            <div id="password-box">
+                <span>Hasło</span>
+                <div id="password-input-box-login">
+                    <input class="validation-input" type="password" name="" id="input-password-login">
+                    <img id="eye-icon-login" src=".\eye.png" alt="">
+                </div>  
+            </div>
+            <div id="confirmation-box-login">
+                <button id="login-button">Logowanie</button>
+            </div>
+            <div id="error-box-login">
+                <span id="login-error"></span>
+            </div>
+        </div>
+
+        <div id="api-content">
+            <div id="title">
+                <span id="title-text">Catopedia</span>
+            </div>
+            <div id="api-buttons">
+                <button class="api-button" id="gen-facts">Cat facts!</button>
+                <button class="api-button" id="gen-breeds">Cat breeds!</button>
+            </div>
+            <div id="api-item-list">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
